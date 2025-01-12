@@ -1,0 +1,50 @@
+ローカルリポジトリ「git_challenge」作成課題。（以下）hello_world.txt作成・コミットと変更コミットのGitコマンド履歴
+-----------------------------------------------------------------------------------
+PS C:\Users\yurik\OneDrive\Desktop\michi\git_test> git config --global user.name
+dingleberry370
+PS C:\Users\yurik\OneDrive\Desktop\michi\git_test> git config --global user.email
+mitch3783@gmail.com
+PS C:\Users\yurik\OneDrive\Desktop\michi\git_test> git config init.defaultBranch
+main
+PS C:\Users\yurik\OneDrive\Desktop\michi\git_test> mkdir git_challenge
+
+
+    Directory: C:\Users\yurik\OneDrive\Desktop\michi\git_test
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         1/12/2025  10:55 AM                git_challenge
+
+
+PS C:\Users\yurik\OneDrive\Desktop\michi\git_test> cd git_challenge
+PS C:\Users\yurik\OneDrive\Desktop\michi\git_test\git_challenge> git init
+Initialized empty Git repository in C:/Users/yurik/OneDrive/Desktop/michi/git_test/git_challenge/.git/
+PS C:\Users\yurik\OneDrive\Desktop\michi\git_test\git_challenge> git add hello_world
+PS C:\Users\yurik\OneDrive\Desktop\michi\git_test\git_challenge> git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world
+
+PS C:\Users\yurik\OneDrive\Desktop\michi\git_test\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) 850ea25] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world
+PS C:\Users\yurik\OneDrive\Desktop\michi\git_test\git_challenge> git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\yurik\OneDrive\Desktop\michi\git_test\git_challenge> git add hello_world
+PS C:\Users\yurik\OneDrive\Desktop\michi\git_test\git_challenge> git commit --m "日本語訳を追記"
+[main 5e67e54] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\yurik\OneDrive\Desktop\michi\git_test\git_challenge>
+-----------------------------------------------------------------------------------
